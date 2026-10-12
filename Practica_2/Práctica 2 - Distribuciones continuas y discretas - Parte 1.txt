@@ -1,0 +1,54 @@
+Práctica: Distribución normal aplicada al tiempo de respuesta de servidores
+
+Contexto
+
+Un equipo de desarrollo está monitoreando el tiempo de respuesta de una aplicación web. Después de analizar miles de solicitudes, se determinó que los tiempos de respuesta pueden modelarse aproximadamente mediante una distribución normal.
+
+Los tiempos de respuesta presentan:
+
+MU representa la media aritmetica: μ
+Media aritmetica: σ
+
+* Media: μ = 240 milisegundos
+* Desviación estándar: σ = 35 milisegundos
+
+Por lo tanto:
+
+
+El objetivo es utilizar Python para determinar la probabilidad de que una solicitud tenga diferentes tiempos de respuesta.
+
+
+1. Probabilidades menores que un valor
+
+Calcula mediante Python las siguientes probabilidades:
+
+a) ¿Cuál es la probabilidad de que una solicitud tenga un tiempo de respuesta menor a 200 ms?: P(X<200)
+
+
+
+
+2. Probabilidades mayores que un valor
+
+Calcula:
+
+a) Probabilidad de que el tiempo de respuesta sea mayor a 300 ms. P(X>300)
+
+
+
+3. Probabilidades dentro de un intervalo
+
+Calcula:
+
+a) Probabilidad de que tarde entre 180 y 300 ms. P(180<X<300)
+
+
+
+4. Aplicación al rendimiento del sistema
+
+Supongamos que el equipo considera que una solicitud tiene un tiempo de respuesta lento cuando supera los 300 ms.
+
+Pregunta 1: ¿Cuál es la probabilidad de que una solicitud sea considerada lenta?
+
+Pregunta 2: Si durante un periodo se reciben 10,000 solicitudes, ¿cuántas solicitudes se esperaría que fueran lentas?
+
+Pregunta 3: Si el equipo quiere que solamente el 5 % de las solicitudes supere cierto tiempo de respuesta, ¿cuál debería ser aproximadamente ese tiempo límite?

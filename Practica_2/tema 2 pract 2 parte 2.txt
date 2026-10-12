@@ -1,0 +1,70 @@
+1. Distribución Binomial
+
+Una empresa realiza una prueba de calidad a 20 dispositivos electrónicos. La probabilidad de que un dispositivo presente una falla es de 0.10.
+
+Por lo tanto:
+
+* n=20
+* p=0.10
+* X = número de dispositivos defectuosos.
+
+Actividades
+
+Utilizando scipy.stats.binom:
+
+1. Calcula la probabilidad de que exactamente 3 dispositivos sean defectuosos:
+    P(X=3)
+2. Calcula la probabilidad de que exactamente 5 dispositivos sean defectuosos:
+    P(X=5)
+3. Calcula la probabilidad de que como máximo 3 dispositivos sean defectuosos:
+   
+4. Calcula la probabilidad de que más de 3 dispositivos sean defectuosos:
+    
+5. Calcula la probabilidad de que haya entre 2 y 5 dispositivos defectuosos, incluyendo ambos extremos:
+    
+6. Genera una gráfica de la distribución binomial para todos los valores posibles de X.
+
+7. Identifica en la gráfica cuál es el valor de X que tiene la mayor probabilidad. 
+
+
+
+2. Distribución de Poisson
+
+En el área de soporte técnico de una universidad se reciben en promedio 4 solicitudes de soporte por hora.
+
+Por lo tanto:
+
+lambda=4
+
+donde X representa el número de solicitudes recibidas durante una hora.
+
+Actividades
+
+Utilizando scipy.stats.poisson:
+
+1. Calcula la probabilidad de recibir exactamente 2 solicitudes en una hora:
+   
+2. Calcula la probabilidad de recibir exactamente 4 solicitudes:
+   
+3. Calcula la probabilidad de recibir exactamente 7 solicitudes:
+   
+4. Calcula la probabilidad de recibir como máximo 3 solicitudes:
+    
+5. Calcula la probabilidad de recibir más de 5 solicitudes:
+    
+6. Calcula la probabilidad de recibir entre 2 y 6 solicitudes, incluyendo los extremos:
+    
+7. Genera una gráfica de la distribución de Poisson para valores de X desde 0 hasta 15.
+
+
+8. Identifica el valor de X que presenta la mayor probabilidad. 
+
+
+Dentro de scipy esta lo binomial
+Añadir que hace binom.pmf, binom.cdf, binom.sf
+
+binom.pmf: calcula la función de masa de probabilidad
+binom.cdf: calcula la probabilidad acumulada de obtener k o menos éxitos en un número determinado de ensayos independientes de una Distribución binomial.
+binom.sf: calcula la función de supervivencia (survival function) de una distribución binomial.
+
+A partir del inciso b ya no lleva grafica

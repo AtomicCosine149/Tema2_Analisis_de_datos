@@ -1,0 +1,92 @@
+Tema 2: Práctica 1 
+
+4.1 Análisis de variables cualitativas
+
+Para las variables categóricas, por ejemplo Nivel_Triage:
+
+* Tabla de frecuencia absoluta.
+* Tabla de frecuencia relativa (%). (Quedara pendiente)
+* Frecuencia acumulada cuando sea aplicable.
+* Diagrama de pastel.
+* Gráfica de barras.
+* Interpretación de la distribución de las categorías.
+
+4.2 Análisis de variables cuantitativas
+
+Para variables como Edad, Tiempo_Espera_Min y Costo_Atencion_USD, calcular:
+
+Medidas de tendencia central
+
+* Media.
+* Mediana.
+* Moda.
+
+Medidas de posición
+
+* Mínimo.
+* Máximo.
+* Q1.
+* Q2 (mediana).
+* Q3.
+
+Medidas de dispersión
+
+* Rango.
+* Varianza.
+* Desviación estándar.
+* Rango intercuartílico (IQR). (si el inicio de la caja q1 y el final es q3, se debe de restar las difrencia entre q3 y q1, la segunda forma se utiliza scpy .stats de scpy y qr es la funcion)
+* Coeficiente de variación. 
+
+Realizar el Diagrama de caja y bigotes (boxplot) para cada una de las variables numéricas indicadas.  En los boxplots se recomienda que aparezcan visualmente o en el análisis los valores de: Q1, mediana, Q3 y valores atípicos.
+
+
+(Faltaria las eqtiquetas de las graficas)
+
+A partir de aqui para mañana:
+4.3 Detección de valores atípicos
+
+
+
+4.5 Análisis de asimetría y curtosis
+
+Para cada variable cuantitativa, el alumno deberá calcular e interpretar:
+
+* Asimetría.
+* Curtosis.
+
+Deberá indicar si la distribución presenta aproximadamente:
+
+* Simetría.
+* Asimetría positiva.
+* Asimetría negativa.
+* Curtosis positiva.
+* Curtosis negativa.
+
+Y relacionar estos resultados con el histograma y boxplot.
+
+
+
+Anotaciones:
+intervalos y etiquetas
+se ocupa 
+.cut clasifica lso datos
+rangos = pd.cut(
+    calificaciones,
+    bings=intervalos,
+    labels=etiquetas
+    right=false #le decimos que agarre de 60 a 69
+)
+
+Todo dato que se salga de aqui son datos atipicos:
+rango intercuartílico= Q3-Q1
+limite inferior=Q1-1.5*rango intercuartílico
+limite superior=Q3+1.5*rango intercuartílico
+
+Nota:
+las graficas entre mas empinada, tiene menos variabilidad, por ende 
+casi no hay datos distintos
+
+curtosis (Hay tres tipos de curtosis)
+simetria (hay 3 tipos de simetria en pye)
+
+Cuando la simetria sea negativa significa que estas mas del lado izquierda
